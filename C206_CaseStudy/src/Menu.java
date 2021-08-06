@@ -49,9 +49,9 @@ public class Menu {
 //		this.price = price;
 //	}
 	
-//	public void displayMenu() {
-//		System.out.println(String.format("Cuisine:%-20s\nMeal:%-20s\nDrink:%-20s\nFruit:%-20s\n", getCuisine(),getMeal(),getDrink(),getFruit()));
-//	}
-//	
+	public void displayMenu() {
+		System.out.println(String.format("Cuisine:%-10s\nMeal:%-10s\nDrink:%-10s\nFruit:%-10s\nPrice:%-10d", getCuisine(),getMeal(),getDrink(),getFruit(),getPrice()));
+	}
+	
 	
 }
