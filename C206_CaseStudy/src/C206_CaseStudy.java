@@ -111,6 +111,15 @@ public class C206_CaseStudy {
 		System.out.println(view);
 	}
 	
+	public static void deleteAccount(ArrayList<Account> accounts) {
+		String username = Helper.readString("Enter your username > ");
+		for (Account a: accounts) {
+			if (username.equals(a.getUsername())) {
+				accounts.remove(a);
+			}
+		}
+	}
+	
 	public static void addMenuItem(ArrayList<Menu> menuList) {
 		String cuisine = Helper.readString("Western / Asian / Vegeterian > ");
 		String meal = Helper.readString("Enter meal name: ");
