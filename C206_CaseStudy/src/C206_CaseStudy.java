@@ -7,7 +7,7 @@ public class C206_CaseStudy {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		ArrayList<Menu> foodList = new ArrayList<Menu>();
-		ArratList<Menu> drinkFruitList = new ArrayList<Menu>();
+		ArrayList<Menu> drinkFruitList = new ArrayList<Menu>();
 		ArrayList<Account> accounts = new ArrayList<Account>();
 		
 		accounts.add(new Account("Jane123x", "12345", "Parent"));
@@ -16,9 +16,11 @@ public class C206_CaseStudy {
 		accounts.add(new Account("Bob89", "90234", "Student"));
 		
 		foodList.add(new Menu("Western", "Carbonara"));
-		foodList.add(new Menu("Vegetarian", "Vegetarian Bee Hoon"))
+		foodList.add(new Menu("Vegetarian", "Vegetarian Bee Hoon"));
+		foodList.add(new Menu("Asian", "Chicken Rice"));
 		drinkFruitList.add(new Menu("Fruit punch", "Banana"));
 		drinkFruitList.add(new Menu("Milo", "Watermelon Slice"));
+		drinkFruitList.add(new Menu("Apple Juice", " Pear Slice"));
 
 		
 		int option = 0;
