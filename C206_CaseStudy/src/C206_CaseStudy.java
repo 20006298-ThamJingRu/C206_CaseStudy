@@ -16,7 +16,7 @@ public class C206_CaseStudy {
 		
 		menuList.add(new Menu("Western", "Carbonara", "Fruit punch", "Watermelon Slice", 5.00));
 		menuList.add(new Menu("Asian", "Chicken Rice", "Milo", "Pear Slice", 4.50));
-		menuList.add(new Menu("Vegeterian", "Vegeterian Bee Hoon", " Apple Juice", "Banana" 3.00));
+		menuList.add(new Menu("Vegeterian", "Vegeterian Bee Hoon", "Apple Juice", "Banana", 3.00));
 		
 
 		int option = 0;
