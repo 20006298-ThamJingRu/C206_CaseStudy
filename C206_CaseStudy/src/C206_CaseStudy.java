@@ -13,12 +13,12 @@ public class C206_CaseStudy {
 		accounts.add(new Account("xxRoxy23", "45678", "Student"));
 		accounts.add(new Account("Regina34", "67805", "Parent"));
 		accounts.add(new Account("Bob89", "90234", "Student"));
-		
+
 		menuList.add(new Menu("Western", "Carbonara", "Fruit punch", "Watermelon Slice", 5.00));
 		menuList.add(new Menu("Asian", "Chicken Rice", "Milo", "Pear Slice", 4.50));
 		menuList.add(new Menu("Vegeterian", "Vegeterian Bee Hoon", "Apple Juice", "Banana", 3.00));
-		
-        int option = 0;
+
+		int option = 0;
 
 		while (option != OPTION_OUT) {
 			C206_CaseStudy.menu();
@@ -110,35 +110,46 @@ public class C206_CaseStudy {
 		}
 		System.out.println(view);
 	}
-	
+
 	public static void deleteAccount(ArrayList<Account> accounts) {
 		String username = Helper.readString("Enter your username > ");
-		for (Account a: accounts) {
+		for (Account a : accounts) {
 			if (username.equals(a.getUsername())) {
 				accounts.remove(a);
 			}
 		}
 	}
-	
+
 	public static void addMenuItem(ArrayList<Menu> menuList) {
 		String cuisine = Helper.readString("Western / Asian / Vegeterian > ");
 		String meal = Helper.readString("Enter meal name: ");
 		String drink = Helper.readString("Enter choice of drink: ");
 		String fruit = Helper.readString("Enter type of fruit: ");
 		Double price = Helper.readDouble("Enter price of meal: ");
-		
-		Menu newMenuItem = new Menu (cuisine, meal, drink, fruit, price);
+
+		Menu newMenuItem = new Menu(cuisine, meal, drink, fruit, price);
 		menuList.add(newMenuItem);
-		
+
 	}
-	
+
 	public static void viewMenuItem(ArrayList<Menu> menuList) {
 		String view = String.format("%-10s %-10s %-10s %-10s %s\n", "Cuisine", "Meal", "Drink", "Fruit", "Price");
 		Helper.line(60, "-");
 		for (Menu m : menuList) {
-			view += String.format("%-10s %-10s %-10s %-10s %s\n", m.getCuisine(), m.getMeal(), m.getDrink(), m.getFruit(), m.getPrice());
+			view += String.format("%-10s %-10s %-10s %-10s %s\n", m.getCuisine(), m.getMeal(), m.getDrink(),
+					m.getFruit(), m.getPrice());
 		}
 		System.out.println(view);
+
 	}
 
+	public static void deleteMenuItem(ArrayList<Menu> menuList) {
+		String meal = Helper.readString("Enter meal name: ");
+		for (Menu m : menuList) {
+			if (meal.equals(m.getMeal())) {
+				menuList.remove(m);
+			}
+
+		}
+	}
 }
