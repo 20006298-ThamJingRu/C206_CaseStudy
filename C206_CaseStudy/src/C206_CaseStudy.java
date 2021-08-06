@@ -18,6 +18,7 @@ public class C206_CaseStudy {
 		foodList.add(new Menu("Western", "Carbonara"));
 		foodList.add(new Menu("Vegetarian", "Vegetarian Bee Hoon"));
 		foodList.add(new Menu("Asian", "Chicken Rice"));
+		
 		drinkFruitList.add(new Menu("Fruit punch", "Banana"));
 		drinkFruitList.add(new Menu("Milo", "Watermelon Slice"));
 		drinkFruitList.add(new Menu("Apple Juice", " Pear Slice"));
