@@ -13,6 +13,11 @@ public class C206_CaseStudy {
 		accounts.add(new Account("xxRoxy23", "45678", "Student"));
 		accounts.add(new Account("Regina34", "67805", "Parent"));
 		accounts.add(new Account("Bob89", "90234", "Student"));
+		
+		menuList.add(new Menu("Western", "Carbonara", "Fruit punch", "Watermelon Slice"));
+		menuList.add(new Menu("Asian", "Chicken Rice", "Milo", "Pear Slice"));
+		menuList.add(new Menu("Vegeterian", "Vegeterian Bee Hoon", " Apple Juice", "Banana"));
+		
 
 		int option = 0;
 
