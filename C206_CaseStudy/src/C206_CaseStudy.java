@@ -118,6 +118,18 @@ public class C206_CaseStudy {
 		String fruit = Helper.readString("Enter type of fruit: ");
 		Double price = Helper.readDouble("Enter price of meal: ");
 		
+		Menu newMenuItem = new Menu (cuisine, meal, drink, fruit, price);
+		menuList.add(newMenuItem);
+		
+	}
+	
+	public static void viewMenuItem(ArrayList<Menu> menuList) {
+		String view = String.format("%-10s %-10s %-10s %-10s %s\n", "Cuisine", "Meal", "Drink", "Fruit", "Price");
+		Helper.line(60, "-");
+		for (Menu m : menuList) {
+			view += String.format("%-10s %-10s %-10s %-10s %s\n", m.getCuisine(), m.getMeal(), m.getDrink(), m.getFruit(), m.getPrice());
+		}
+		System.out.println(view);
 	}
 
 }
