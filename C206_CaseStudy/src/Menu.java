@@ -4,12 +4,14 @@ public class Menu {
 	private String meal;
 	private String drink;
 	private String fruit;
+	private double price;
 	
-	public Menu(String cuisine,String meal,String drink,String fruit) {
+	public Menu(String cuisine,String meal,String drink,String fruit,double price) {
 		this.cuisine = cuisine;
 		this.meal = meal;
 		this.drink = drink;
 		this.fruit = fruit;
+		this.price = price;
 	}
 	
 	public String getCuisine() {
@@ -38,6 +40,13 @@ public class Menu {
 	}
 //	public void setFruit() {
 //		this.fruit = fruit;
+//	}
+	
+	public double getPrice() {
+		return price;
+	}
+//	public void setPrice() {
+//		this.price = price;
 //	}
 	
 //	public void displayMenu() {

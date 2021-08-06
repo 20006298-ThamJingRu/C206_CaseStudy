@@ -117,7 +117,7 @@ public class C206_CaseStudy {
 		String meal = Helper.readString("Enter meal name: ");
 		String drink = Helper.readString("Enter choice of drink: ");
 		String fruit = Helper.readString("Enter type of fruit: ");
-		Double price = Helper.readString("Enter price of meal: ");
+		Double price = Helper.readDouble("Enter price of meal: ");
 		
 	}
 
