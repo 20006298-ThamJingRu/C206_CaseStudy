@@ -18,8 +18,7 @@ public class C206_CaseStudy {
 		menuList.add(new Menu("Asian", "Chicken Rice", "Milo", "Pear Slice", 4.50));
 		menuList.add(new Menu("Vegeterian", "Vegeterian Bee Hoon", "Apple Juice", "Banana", 3.00));
 		
-
-		int option = 0;
+        int option = 0;
 
 		while (option != OPTION_OUT) {
 			C206_CaseStudy.menu();
