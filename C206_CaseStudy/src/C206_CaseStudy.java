@@ -54,7 +54,7 @@ public class C206_CaseStudy {
 
 	public static void menu() {
 		// TODO Auto-generated method stub
-		C206_CaseStudy.setHeader("RESOURCE CENTRE APP");
+		C206_CaseStudy.setHeader("Lunch Box Order");
 		System.out.println("1. View Inventory");
 		System.out.println("2. Add");
 		System.out.println("3. Delete");
