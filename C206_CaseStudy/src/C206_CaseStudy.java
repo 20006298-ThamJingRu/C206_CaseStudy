@@ -72,6 +72,8 @@ public class C206_CaseStudy {
 			}
 
 		}
+		
+		System.out.println("Thank you for using lunch box app");
 
 	}
 
