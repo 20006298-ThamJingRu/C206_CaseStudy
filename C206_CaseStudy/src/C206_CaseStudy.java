@@ -2,13 +2,18 @@ import java.util.ArrayList;
 
 public class C206_CaseStudy {
 	
-	private static ArrayList<Menu> menuList = new ArrayList<Menu>();
-	private static ArrayList<Account> accounts = new ArrayList<Account>();
-	
 	private static final int OPTION_OUT = 4;
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		ArrayList<Menu> menuList = new ArrayList<Menu>();
+		ArrayList<Account> accounts = new ArrayList<Account>();
+		
+		accounts.add(new Account("Jane123x", "12345", "Parent"));
+		accounts.add(new Account("xxRoxy23", "45678", "Student"));
+		accounts.add(new Account ("Regina34", "67805", "Parent"));
+		accounts.add(new Account("Bob89", "90234", "Student"));
+		
 		
 		int option = 0;
 		
