@@ -5,10 +5,13 @@ public class C206_CaseStudy {
 
 	private static final int OPTION_OUT = 4;
 
+	private static ArrayList<Menu> menuList = new ArrayList<Menu>();
+	private static ArrayList<Account> accounts = new ArrayList<Account>();
+	private static ArrayList<Order> orderList = new ArrayList<Order>();
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		ArrayList<Menu> menuList = new ArrayList<Menu>();
-		ArrayList<Account> accounts = new ArrayList<Account>();
+
 
 		accounts.add(new Account("Jane123x", "12345", "Parent"));
 		accounts.add(new Account("xxRoxy23", "45678", "Student"));
@@ -167,7 +170,7 @@ public class C206_CaseStudy {
        
         if (LocalDate.parse(dateOfOrder).getDayOfYear() - LocalDate.now().getDayOfYear() > 0 && LocalDate.parse(dateOfOrder).getMonth() == LocalDate.now().getMonth()) {
             for (Menu m : menuList) {
-                m.displayMenu();
+            	viewMenuItem(menuList);
                 String cuisine = Helper.readString("Enter cuisine > ");
                 if (!cuisine.isEmpty()){
                     if (cuisine.equalsIgnoreCase(m.getCuisine())) {
@@ -197,7 +200,7 @@ public class C206_CaseStudy {
         if (LocalDate.parse(dateOfOrder).getDayOfYear() - LocalDate.now().getDayOfYear() > 0) {
             for (Order odr : orderList) {
                 if (LocalDate.parse(dateOfOrder) == odr.getDate()) {
-                    m.displayMenu();
+                	viewMenuItem(menuList);
                     for (Menu m : menuList) {
                         String cuisine = Helper.readString("Enter cuisine > ");
                         if (!cuisine.isEmpty()){
