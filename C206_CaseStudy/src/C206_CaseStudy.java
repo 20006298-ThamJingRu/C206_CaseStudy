@@ -6,8 +6,7 @@ public class C206_CaseStudy {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		ArrayList<Menu> foodList = new ArrayList<Menu>();
-		ArrayList<Menu> drinkFruitList = new ArrayList<Menu>();
+		ArrayList<Menu> menuList = new ArrayList<Menu>();
 		ArrayList<Account> accounts = new ArrayList<Account>();
 		
 		accounts.add(new Account("Jane123x", "12345", "Parent"));
@@ -15,14 +14,6 @@ public class C206_CaseStudy {
 		accounts.add(new Account ("Regina34", "67805", "Parent"));
 		accounts.add(new Account("Bob89", "90234", "Student"));
 		
-//		foodList.add(new Menu("Western", "Carbonara"));
-//		foodList.add(new Menu("Vegetarian", "Vegetarian Bee Hoon"));
-//		foodList.add(new Menu("Asian", "Chicken Rice"));
-//		
-//		drinkFruitList.add(new Menu("Fruit punch", "Banana"));
-//		drinkFruitList.add(new Menu("Milo", "Watermelon Slice"));
-//		drinkFruitList.add(new Menu("Apple Juice", " Pear Slice"));
-
 		
 		int option = 0;
 		
@@ -49,6 +40,9 @@ public class C206_CaseStudy {
 				System.out.println("5. Add brder bill");
 				
 				int add = Helper.readInt("Enter option to view selected item > ");
+				if (add == 1) {
+					addAccount(accounts);
+				}
 
 			}else if (option == 2) {
 				C206_CaseStudy.setHeader("Select option to view");
@@ -82,6 +76,19 @@ public class C206_CaseStudy {
 		Helper.line(80, "-");
 		System.out.println(header);
 		Helper.line(80, "-");
+	}
+	
+	public static void addAccount(ArrayList<Account> accounts) {
+		String user = Helper.readString("Are you a student/ parent > ");
+		String username = Helper.readString("Enter username: ");
+		String password = Helper.readString("Enter password: ");
+		
+		Account newAcct = new Account(username, password, user);
+		accounts.add(newAcct);
+	}
+	
+	public static void viewAccount() {
+		
 	}
 
 	
